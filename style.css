@@ -6,19 +6,38 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
 }
 
-@media (width > 550px) {
+@media (width > 680px) {
   header {
     .mobile-menu {
       display: none;
     }
-    .desktop-menu {
+    .desktop-menu,
+    a {
       display: flex;
       gap: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000000;
     }
     .banner {
       justify-content: flex-end;
+    }
+  }
+  main {
+    .desktop-mode {
+      flex-direction: row;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .desktop-image {
+      gap: 1rem;
+      display: inline;
     }
   }
 }
@@ -40,9 +59,16 @@ main {
 }
 .title {
   color: #ed6436;
+  font-weight: bold;
+}
+.p2 {
+  font-size: 3rem;
+  font-weight: 800;
 }
 .view-all {
   color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
   padding: 10px;
   background-color: #ed6436;
   border-radius: 0 25px 25px 25px;
